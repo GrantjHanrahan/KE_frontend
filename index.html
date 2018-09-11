@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <title>hCard Builder</title>
 </head>
 <body>
@@ -64,7 +65,7 @@
                         </fieldset>
                     </form> <!-- end of input form -->
 
-                    <div class="">
+                    <div class="btn-field">
                         <input type="file">
                         <button class="upload-btn">Upload Avatar</button>
                         <button class="create-btn">Create hCard</button>
@@ -76,7 +77,47 @@
             <div class="column"><!-- column right start -->
                 <div class="hcard-display">
                     <h3>hCard Preview</h3>
-                    
+                    <div class="header">
+                        <div class="hcard-username">
+                            <span id="hcard-givenname"></span>
+                            <span id="hcard-surname"></span>
+                        </div>
+                        <div class="avatar-thumbnail">
+                            <img src="" height="100" class="avatar-img" alt="Avatar Thumbnail">
+                        </div>
+                    </div>
+                        
+                    <div class="hcard-details">
+                        <div class="hcard-row">
+                            <span class="title">Email</span>
+                            <span class="hcard-field" id="hcard-email"></span>
+                        </div>
+                        <div class="hcard-row">
+                            <span class="title">Phone</span>
+                            <span class="hcard-field" id="hcard-email"></span>
+                        </div>
+                        <div class="hcard-row">
+                            <span class="title">Address</span>
+                            <span class="hcard-field" id="hcard-housenumber"></span>
+                            <span class="hcard-field" id="hcard-street"></span>
+                        </div>
+                        <div class="hcard-row empty-field">
+                            <span class="title"></span>
+                            <span class="hcard-field" id="hcard-suburb"></span>
+                            <span class="hcard-field" id="hcard-state"></span>
+                        </div>
+                        <div class="hcard-row hcard-col">
+                            <div class="col">
+                                <span class="title">Postcode</span>
+                                <span class="hcard-field" id="hcard-postcode">
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span class='title'>Country</span>
+                                <span class="hcard-field" id="hcard-country"></span>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div><!-- column right end -->
