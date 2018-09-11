@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>hCard Builder</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column"><!-- column left start -->
+                <div class="hcard-input">
+                    <h1>hCard Builder</h1>
+                    <form><!-- input form -->
+                        <fieldset>
+                            <h4 class="heading"></h4>
+                            <div class="field">
+                                <label for="givenname">Given Name</label>
+                                <input type="text" id="givenname" onkeyup="preview()" autofocus> <!-- onkeyup will trigger the preview function, preview() will get the text value of the user's input and save it into a variable which will be displayed on the ouput card -->
+                            </div>
+                            <div class="field">
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" onkeyup="preview()">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <h4 class="heading">Address</h4>
+                            <div class="field">
+                                <label for="housenumber">House Name or #</label>
+                                <input type="text" id="housenumber" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="street">Street</label>
+                                <input type="text" id="street" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="suburb">Suburb</label>
+                                <input type="text" id="suburb" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="state">State</label>
+                                <input type="text" id="state" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="postcode">Postcode</label>
+                                <input type="text" id="postcode" onkeyup="preview()">
+                            </div>
+                            <div class="field">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" onkeyup="preview()">
+                            </div>
+                        </fieldset>
+                    </form> <!-- end of input form -->
+
+                    <div class="">
+                        <input type="file">
+                        <button class="upload-btn">Upload Avatar</button>
+                        <button class="create-btn">Create hCard</button>
+                    </div>
+
+                </div>
+            </div><!-- column left end -->
+
+            <div class="column"><!-- column right start -->
+                <div class="hcard-display">
+                    <h3>hCard Preview</h3>
+                    
+
+                </div>
+            </div><!-- column right end -->
+        </div>
+    </div>
+    
+</body>
+</html>
