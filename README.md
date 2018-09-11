@@ -11,7 +11,7 @@
 * Technologies: HTML, CSS, JS (no frameworks used)
 * Used Gimp to apply matching styling and colours
 * Applied responsive design
-* QAT done via BrowserStack to check the compatibility for IE, FireFox, Safari, Chrome, Android and iOS.
+* QAT done via BrowserStack to check the compatibility for IE 15+, FireFox 32+, Safari 7.1+, Chrome 38+, Android and iOS.
 * Added comments to assist with readability.
 
 ## Challenges
