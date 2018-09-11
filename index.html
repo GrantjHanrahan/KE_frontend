@@ -66,8 +66,8 @@
                     </form> <!-- end of input form -->
 
                     <div class="btn-field">
-                        <input type="file">
-                        <button class="upload-btn">Upload Avatar</button>
+                        <input type="file" onchange="uploadImage();" id="upload">
+                        <button class="upload-btn" onclick="document.getElementById('upload').click()">Upload Avatar</button>
                         <button class="create-btn">Create hCard</button>
                     </div>
 
